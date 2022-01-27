@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/daisyui/1.25.4/full.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="container mx-auto py-4 px-1">
+
+
+        <div class="mockup-window border border-base-300 mt-3 w-1/2 mx-auto">
+            <div class="flex justify-center">
+                <iframe src="https://bach.ml/?oda=ALG1P1B" frameborder="0" id="odaiframe" class="small"></iframe>
+            </div>
+        </div>
+            
+        <div class=" break-all" id="mensaje">
+                Interactuar para obtener el mensaje.
+        </div>
+
+        </div>
+
+
+
+    </div> <!-- /container -->
+
+    <script>
+        window.addEventListener('message', function (event) {
+            if(typeof event.data == 'string'){
+                var mensaje = JSON.parse(event.data)
+                document.getElementById('mensaje').innerHTML = event.data
+            }
+        }, true)
+    </script>
+
+
+</body>
+
+</html>
