@@ -18,88 +18,22 @@
         <div class="flex-1 px-2 mx-2">
           <h1 class="text-lg font-bold">ODAS Bachillerato</h1>
         </div>
-        <a href="https://github.com/ealbinu/MBachillerato/archive/refs/heads/gh-pages.zip" target="_blank" class="btn btn-primary">Descargar ODAS 💾</a>
-      </div>
-      
-      
-      <section class="hero bg-base-200 rounded-box my-20">
-        <div class="text-center hero-content">
-          <div>
-          <h2 class="font-bold text-2xl">TL;DR</h2>
-          <p class="text-xs">Resúmen</p>
-          <a href="ejemplo.html" target="_blank" class="mt-4 btn btn-primary btn-sm">Ver ejemplo simple 🖥️</a>
-        </div>
-        </div>
-      </section>
-      <div>
-        <p>Cargar ODA ALG1P1B vacío:</p>
-        <div class="mockup-code mt-3 w-full">
-          <pre><code>&lt;iframe src="https://bach.ml/<span class="text-error">?</span><strong class="text-info">oda</strong>=<strong>ALG1P1B</strong>"&gt;</code></pre>
-        </div>
-      </div>
-      <div class="mt-10">
-        <p>Cargar ODA ALG1P1B y pasar su status (respuestas guardadas del usuario):</p>
-        <div class="mockup-code mt-3 w-full">
-          <pre><code>&lt;iframe src="https://bach.ml/<span class="text-error">?</span><strong class="text-info">oda</strong>=<strong>ALG1P1B</strong>&<strong class="text-primary">status</strong>=<span class="text-xs">{{statusExample}}</span>"&gt;</code></pre>
-        </div>
       </div>
       
       
       
-      <section class="hero bg-base-200 rounded-box my-20">
-        <div class="text-center hero-content">
-          <h2 class="font-bold text-2xl">Estructura </h2>
-        </div>
-      </section>
-      <div class="grid gap-4 text-center .grid-cols-1 sm:grid-cols-3">
-        <div class="card shadow bg-white card-bordered">
-          <div class="card-body">
-            <div class="text-4xl">📄</div>
-            <div class="font-bold">index.html</div>
-          </div>
-        </div>
-        <div class="card shadow bg-white card-bordered">
-          <div class="card-body">
-            <div class="text-4xl">📁</div>
-            <div class="font-bold">assets</div>
-            <div class="mt-4">
-              <div class="card card-bordered">
-                <div class="card-body">
-                  <div>📄 index.js</div>
-                  <div>📄 vendor.js</div>
-                  <div>📄 index.css</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card shadow bg-white card-bordered">
-          <div class="card-body">
-            <div class="text-4xl">📁</div>
-            <div class="font-bold">odas</div>
-            <div class="mt-4">
-              <div class="card card-bordered">
-                <div class="card-body">
-                  <div>📁 animations</div>
-                  <div>📁 ALG1P1A</div>
-                  <div>📁 ALG1P1B</div>
-                  <div>📁 QUIMIP1</div>
-                  <div>📁 ...</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      
+      
+      
       <section class="hero bg-base-200 rounded-box my-20">
         <div class="text-center hero-content">
           <h2 class="font-bold text-2xl">Uso</h2>
         </div>
       </section>
-      <p class="my-4">A diferencia de las odas de primaria, donde la url de carga era apuntada hacia la carpeta de la
-        oda, en las odas de bachillerato se apuntará hacia el root y se pasará el parámetro "oda" con el id a cargar.
-      </p>
-      <p>El dominio de desarrollo es <strong>https://bach.ml/</strong>, por lo que todos los ejemplos incuirán esa url.
+      <p class="my-4">Las ODAS son cargadas a través de un iframe, por lo que es necesario pasarle datos a la plataforma a través de <em>postMessage</em>.</p>
+
+      <p>El dominio de pruebas es <strong>https://bach.ml/</strong>, por lo que todos los ejemplos incuirán esa url.
       </p>
 
       <div class="card shadow-lg bg-white my-5 card-bordered">
